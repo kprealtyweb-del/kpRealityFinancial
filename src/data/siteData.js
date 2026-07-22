@@ -1,0 +1,305 @@
+import {
+  ShieldCheckIcon,
+  BoltIcon,
+  UserGroupIcon,
+  ClockIcon,
+  DocumentCheckIcon,
+  SparklesIcon,
+} from '@heroicons/react/24/outline'
+
+export const services = [
+  {
+    id: 1,
+    title: 'New Car Insurance',
+    description: 'Comprehensive coverage for your brand new vehicle with zero depreciation, roadside assistance, and engine protection add-ons.',
+    features: ['Zero Depreciation Cover', 'Engine Protection', 'Roadside Assistance', 'Return to Invoice', 'Key Replacement'],
+    icon: SparklesIcon,
+  },
+  {
+    id: 2,
+    title: 'Used Car Insurance',
+    description: 'Reliable protection for pre-owned vehicles with flexible premium options and extensive coverage tailored to your needs.',
+    features: ['Third-Party Liability', 'Own Damage Cover', 'Personal Accident Cover', 'Theft Protection', 'Natural Disaster Cover'],
+    icon: ShieldCheckIcon,
+  },
+  {
+    id: 3,
+    title: 'Policy Renewal',
+    description: 'Hassle-free policy renewal with no-claim bonuses, loyalty discounts, and seamless documentation process.',
+    features: ['No-Claim Bonus', 'Loyalty Discounts', 'Instant Renewal', 'Gap-Free Coverage', 'Enhanced Benefits'],
+    icon: DocumentCheckIcon,
+  },
+]
+
+export const whyChooseUs = [
+  {
+    id: 1,
+    title: 'Affordable Premium',
+    description: 'Get the best coverage at competitive rates that fit your budget.',
+    icon: BoltIcon,
+  },
+  {
+    id: 2,
+    title: 'Fast Claims',
+    description: 'Quick and hassle-free claims settlement within 24 hours.',
+    icon: ClockIcon,
+  },
+  {
+    id: 3,
+    title: 'Trusted Advisors',
+    description: 'Expert guidance from certified insurance professionals.',
+    icon: UserGroupIcon,
+  },
+  {
+    id: 4,
+    title: '24/7 Support',
+    description: 'Round-the-clock assistance whenever you need us.',
+    icon: ClockIcon,
+  },
+  {
+    id: 5,
+    title: 'Easy Documentation',
+    description: 'Minimal paperwork with digital-first processes.',
+    icon: DocumentCheckIcon,
+  },
+  {
+    id: 6,
+    title: 'Instant Policy',
+    description: 'Get your policy issued within minutes, not days.',
+    icon: SparklesIcon,
+  },
+]
+
+export const statistics = [
+  { id: 1, value: '10K+', label: 'Customers' },
+  { id: 2, value: '1500+', label: 'Claims Settled' },
+  { id: 3, value: '98%', label: 'Claim Success' },
+  { id: 4, value: '24/7', label: 'Support' },
+]
+
+export const insuranceProcess = [
+  {
+    id: 1,
+    step: '01',
+    title: 'Get Quote',
+    description: 'Share your vehicle details and get an instant, customized insurance quote.',
+  },
+  {
+    id: 2,
+    step: '02',
+    title: 'Submit Documents',
+    description: 'Upload your documents digitally for quick verification and processing.',
+  },
+  {
+    id: 3,
+    step: '03',
+    title: 'Policy Issued',
+    description: 'Receive your policy document instantly via email after approval.',
+  },
+  {
+    id: 4,
+    step: '04',
+    title: 'Claim Assistance',
+    description: 'File claims easily with our dedicated support team available 24/7.',
+  },
+]
+
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Rajesh Kumar',
+    role: 'Business Owner',
+    content: ' KP Realty & Financial Services made getting car insurance so simple. Their team guided me through the entire process, and I got the best rate in the market. Highly recommend!',
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: 'Priya Sharma',
+    role: 'Software Engineer',
+    content: 'I had a minor accident and filed a claim with  KP Realty & Financial Services. The entire process was seamless, and my claim was settled within 48 hours. Outstanding service!',
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: 'Amit Patel',
+    role: 'Doctor',
+    content: 'Renewed my policy with  KP Realty & Financial Services and saved 20% compared to my previous insurer. The no-claim bonus benefits are excellent. Truly customer-first approach.',
+    rating: 5,
+  },
+]
+
+export const claimProcess = [
+  {
+    id: 1,
+    step: '01',
+    title: 'Report the Incident',
+    description: 'Call our 24/7 helpline or report online through our portal immediately after the incident occurs.',
+  },
+  {
+    id: 2,
+    step: '02',
+    title: 'Document Submission',
+    description: 'Submit the required documents including FIR copy, driving license, and photographs of the damage.',
+  },
+  {
+    id: 3,
+    step: '03',
+    title: 'Inspection & Assessment',
+    description: 'Our surveyor will inspect the vehicle and assess the damage within 24 hours of the report.',
+  },
+  {
+    id: 4,
+    step: '04',
+    title: 'Claim Approval',
+    description: 'Once the assessment is complete, your claim will be approved and processed for settlement.',
+  },
+  {
+    id: 5,
+    step: '05',
+    title: 'Settlement',
+    description: 'Receive your claim amount directly in your bank account within 7 working days.',
+  },
+]
+
+export const requiredDocuments = [
+  'Policy Copy',
+  'Claim Form (duly filled)',
+  'Driving License of the driver',
+  'Registration Certificate (RC) of the vehicle',
+  'FIR Copy (in case of theft or third-party damage)',
+  'Photographs of the damaged vehicle',
+  'Repair estimates from the garage',
+  'Original repair bills and payment receipts',
+]
+
+export const serviceFaqs = [
+  {
+    id: 1,
+    question: 'What types of car insurance do you offer?',
+    answer: 'We offer comprehensive car insurance plans including New Car Insurance, Used Car Insurance, and Policy Renewal services. Each plan is customizable to meet your specific needs and budget.',
+  },
+  {
+    id: 2,
+    question: 'How is my premium calculated?',
+    answer: 'Your premium is calculated based on several factors including your vehicle\'s make, model, age, engine capacity, location, and your past claim history. We ensure competitive pricing with maximum coverage.',
+  },
+  {
+    id: 3,
+    question: 'Can I customize my insurance plan?',
+    answer: 'Yes, all our plans are fully customizable. You can add or remove add-ons like zero depreciation, engine protection, roadside assistance, and more to suit your requirements.',
+  },
+  {
+    id: 4,
+    question: 'What is a No-Claim Bonus (NCB)?',
+    answer: 'No-Claim Bonus is a discount on your premium renewal for every claim-free year. The discount increases progressively, up to 50% off your premium for five consecutive claim-free years.',
+  },
+  {
+    id: 5,
+    question: 'How long does it take to get a policy?',
+    answer: 'With our digital-first approach, you can get your policy issued within minutes of completing the documentation. For new policies, the process typically takes under 30 minutes.',
+  },
+]
+
+export const claimFaqs = [
+  {
+    id: 1,
+    question: 'How do I file a claim?',
+    answer: 'You can file a claim by calling our 24/7 helpline, visiting our nearest branch, or filing online through our website. Our team will guide you through the entire process.',
+  },
+  {
+    id: 2,
+    question: 'How long does claim settlement take?',
+    answer: 'Most claims are settled within 7 working days from the date of receiving all required documents. For minor claims, we aim for 48-hour settlement.',
+  },
+  {
+    id: 3,
+    question: 'What if my claim is rejected?',
+    answer: 'If your claim is rejected, we provide a detailed explanation with reasons. You can appeal the decision by providing additional documentation or clarification within 30 days.',
+  },
+  {
+    id: 4,
+    question: 'Can I track my claim status?',
+    answer: 'Yes, you can track your claim status in real-time through our website or by contacting our customer support team with your claim reference number.',
+  },
+]
+
+export const coreValues = [
+  {
+    id: 1,
+    title: 'Integrity',
+    description: 'We operate with complete transparency and honesty in every interaction.',
+    icon: ShieldCheckIcon,
+  },
+  {
+    id: 2,
+    title: 'Customer First',
+    description: 'Every decision we make puts our customers\' needs at the center.',
+    icon: UserGroupIcon,
+  },
+  {
+    id: 3,
+    title: 'Innovation',
+    description: 'We leverage technology to make insurance simpler and more accessible.',
+    icon: SparklesIcon,
+  },
+  {
+    id: 4,
+    title: 'Excellence',
+    description: 'We strive for the highest standards in service delivery and claims processing.',
+    icon: BoltIcon,
+  },
+]
+
+export const coveragePlans = [
+  {
+    id: 1,
+    title: 'Basic Cover',
+    features: ['Third-Party Liability', 'Personal Accident Cover', 'Legal Liability to Paid Driver'],
+  },
+  {
+    id: 2,
+    title: 'Standard Cover',
+    features: ['All Basic Cover Benefits', 'Own Damage Protection', 'Fire & Theft Cover', 'Natural Disaster Cover'],
+  },
+  {
+    id: 3,
+    title: 'Premium Cover',
+    features: ['All Standard Cover Benefits', 'Zero Depreciation', 'Engine Protection', 'Roadside Assistance', 'Key Replacement', 'Return to Invoice'],
+  },
+]
+
+export const navLinks = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Insurance', path: '/services' },
+  { name: 'Claims', path: '/claims' },
+  { name: 'Contact', path: '/contact' },
+]
+
+export const footerLinks = {
+  company: [
+    { name: 'About Us', path: '/about' },
+    { name: 'Our Team', path: '/about' },
+    { name: 'Careers', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+  ],
+  quickLinks: [
+    { name: 'Get Quote', path: '/contact' },
+    { name: 'File a Claim', path: '/claims' },
+    { name: 'Renew Policy', path: '/services' },
+    { name: 'FAQs', path: '/services' },
+  ],
+  insurance: [
+    { name: 'New Car Insurance', path: '/services' },
+    { name: 'Used Car Insurance', path: '/services' },
+    { name: 'Policy Renewal', path: '/services' },
+    { name: 'Coverage Plans', path: '/services' },
+  ],
+}
+
+export const contactInfo = {
+  address: '123 Insurance Tower, Financial District, Mumbai, Maharashtra 400001',
+  phone: '+91 1800-123-4567',
+  email: 'support@ KP Realty & Financial Services.com',
+  workingHours: 'Mon - Sat: 9:00 AM - 6:00 PM',
+}

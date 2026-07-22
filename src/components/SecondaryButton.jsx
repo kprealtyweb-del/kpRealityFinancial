@@ -1,0 +1,19 @@
+import { Link } from 'react-router-dom'
+
+export default function SecondaryButton({ children, to, onClick, type = 'button', className = '' }) {
+  const baseClasses = `inline-flex items-center justify-center rounded-xl border-2 border-primary bg-transparent px-6 py-3 font-heading text-sm font-semibold text-primary transition-all duration-300 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 ${className}`
+
+  if (to) {
+    return (
+      <Link to={to} className={baseClasses}>
+        {children}
+      </Link>
+    )
+  }
+
+  return (
+    <button type={type} onClick={onClick} className={baseClasses}>
+      {children}
+    </button>
+  )
+}
