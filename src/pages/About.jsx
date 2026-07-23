@@ -1,10 +1,11 @@
-import HeroBanner from '../components/HeroBanner'
-import Container from '../components/Container'
-import SectionTitle from '../components/SectionTitle'
-import FeatureCard from '../components/FeatureCard'
-import StatCard from '../components/StatCard'
-import CTABanner from '../components/CTABanner'
-import { coreValues, statistics, whyChooseUs } from '../data/siteData'
+import HeroBanner from "../components/HeroBanner";
+import Container from "../components/Container";
+import SectionTitle from "../components/SectionTitle";
+import FeatureCard from "../components/FeatureCard";
+import StatCard from "../components/StatCard";
+import CTABanner from "../components/CTABanner";
+import { coreValues, statistics, whyChooseUs } from "../data/siteData";
+import officeImg from "../../public/png/office.png";
 
 export default function About() {
   return (
@@ -12,9 +13,9 @@ export default function About() {
       <HeroBanner
         subtitle="About  KP Realty & Financial Services"
         title="Protecting What Drives You Forward"
-        description="Since our inception,  KP Realty & Financial Services Insurance has been on a mission to make car insurance accessible, affordable, and hassle-free for every vehicle owner in India."
-        primaryAction={{ label: 'Get Quote', to: '/contact' }}
-        secondaryAction={{ label: 'Our Services', to: '/services' }}
+        description="Since our inception,  KP Realty & Financial Services has been on a mission to make car insurance accessible, affordable, and hassle-free for every vehicle owner in India."
+        primaryAction={{ label: "Get Quote", to: "/contact" }}
+        secondaryAction={{ label: "Our Services", to: "/services" }}
       />
 
       <section className="py-12 md:py-16 lg:py-20">
@@ -28,18 +29,32 @@ export default function About() {
               />
               <div className="space-y-4 text-sm leading-relaxed text-paragraph sm:text-base">
                 <p>
-                   KP Realty & Financial Services Insurance was founded with a simple belief — every vehicle owner deserves reliable, transparent, and affordable insurance coverage. What started as a small team of insurance professionals has grown into one of India's most trusted car insurance providers.
+                  KP Realty & Financial Services was founded with a simple
+                  belief — every vehicle owner deserves reliable, transparent,
+                  and affordable insurance coverage. What started as a small
+                  team of insurance professionals has grown into one of India's
+                  most trusted car insurance providers.
                 </p>
                 <p>
-                  Over the years, we've served thousands of customers, settled countless claims, and built a reputation for putting our customers first. Our digital-first approach makes it easy to get insured, file claims, and manage your policy from anywhere.
+                  Over the years, we've served thousands of customers, settled
+                  countless claims, and built a reputation for putting our
+                  customers first. Our digital-first approach makes it easy to
+                  get insured, file claims, and manage your policy from
+                  anywhere.
                 </p>
                 <p>
-                  We combine deep industry expertise with cutting-edge technology to deliver an insurance experience that's seamless, fast, and customer-centric.
+                  We combine deep industry expertise with cutting-edge
+                  technology to deliver an insurance experience that's seamless,
+                  fast, and customer-centric.
                 </p>
               </div>
             </div>
             <div className="aspect-[16/9] w-full rounded-2xl bg-slate-200 flex items-center justify-center font-heading text-sm font-medium text-slate-500 border border-border shadow-sm">
-              Office Image Placeholder
+              <img
+                src={officeImg}
+                alt="Office"
+                className="overflow-hidden rounded-xl"
+              />
             </div>
           </div>
         </Container>
@@ -56,7 +71,10 @@ export default function About() {
                 Making Insurance Simple & Accessible
               </h3>
               <p className="text-sm leading-relaxed text-paragraph sm:text-base">
-                To democratize car insurance by providing transparent, affordable, and technology-driven solutions that protect every vehicle owner. We aim to eliminate the complexity of insurance and make the process as simple as a few clicks.
+                To democratize car insurance by providing transparent,
+                affordable, and technology-driven solutions that protect every
+                vehicle owner. We aim to eliminate the complexity of insurance
+                and make the process as simple as a few clicks.
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-background p-6 shadow-sm sm:p-8">
@@ -67,7 +85,10 @@ export default function About() {
                 India's Most Trusted Insurance Partner
               </h3>
               <p className="text-sm leading-relaxed text-paragraph sm:text-base">
-                To become the most customer-centric insurance company in India, where every policyholder feels valued, protected, and confident. We envision a future where insurance is not a burden but a seamless part of vehicle ownership.
+                To become the most customer-centric insurance company in India,
+                where every policyholder feels valued, protected, and confident.
+                We envision a future where insurance is not a burden but a
+                seamless part of vehicle ownership.
               </p>
             </div>
           </div>
@@ -125,5 +146,5 @@ export default function About() {
         buttonLabel="Get Started"
       />
     </>
-  )
+  );
 }

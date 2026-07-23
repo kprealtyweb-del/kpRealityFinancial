@@ -118,7 +118,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-slate-800 pt-8 text-center sm:mt-16">
           <p className="text-sm text-slate-500">
-            &copy; {new Date().getFullYear()}  KP Realty & Financial Services Insurance. All rights reserved.
+            &copy; {new Date().getFullYear()}  KP Realty & Financial Services. All rights reserved.
           </p>
         </div>
       </Container>

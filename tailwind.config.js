@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#FF9E20",
+          DEFAULT: "#C18221",
           hover: "#E88D17",
         },
 
@@ -18,7 +15,7 @@ export default {
           hover: "#18484B",
         },
 
-        accent: "#FF9E20",
+        accent: "#C18221",
 
         background: "#F4F2F2",
 

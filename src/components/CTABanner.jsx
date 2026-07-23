@@ -1,9 +1,14 @@
-import Container from '../components/Container'
-import PrimaryButton from '../components/PrimaryButton'
+import Container from "../components/Container";
+import PrimaryButton from "../components/PrimaryButton";
 
-export default function CTABanner({ title, description, buttonLabel = 'Contact Us', buttonTo = '/contact' }) {
+export default function CTABanner({
+  title,
+  description,
+  buttonLabel = "Contact Us",
+  buttonTo = "/contact",
+}) {
   return (
-    <section className="bg-[#215E61] py-16 sm:py-20">
+    <section className="bg-[#C18221] py-16 sm:py-20">
       <Container>
         <div className="text-center">
           <h2 className="mb-4 font-heading text-3xl font-bold text-white sm:text-4xl">
@@ -14,11 +19,14 @@ export default function CTABanner({ title, description, buttonLabel = 'Contact U
               {description}
             </p>
           )}
-          <PrimaryButton to={buttonTo} className="!bg-accent !text-heading hover:!bg-amber-400">
+          <PrimaryButton
+            to={buttonTo}
+            className="!bg-white !text-black hover:!shadow-md"
+          >
             {buttonLabel}
           </PrimaryButton>
         </div>
       </Container>
     </section>
-  )
+  );
 }

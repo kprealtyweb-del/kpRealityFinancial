@@ -1,14 +1,16 @@
-import HeroBanner from '../components/HeroBanner'
-import Container from '../components/Container'
-import SectionTitle from '../components/SectionTitle'
-import Accordion from '../components/Accordion'
-import CTABanner from '../components/CTABanner'
+import HeroBanner from "../components/HeroBanner";
+import Container from "../components/Container";
+import SectionTitle from "../components/SectionTitle";
+import Accordion from "../components/Accordion";
+import CTABanner from "../components/CTABanner";
+import { PhoneIcon, DocumentTextIcon } from "@heroicons/react/24/outline";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import {
-  PhoneIcon,
-  DocumentTextIcon,
-} from '@heroicons/react/24/outline'
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
-import { claimProcess, requiredDocuments, claimFaqs, contactInfo } from '../data/siteData'
+  claimProcess,
+  requiredDocuments,
+  claimFaqs,
+  contactInfo,
+} from "../data/siteData";
 
 export default function Claims() {
   return (
@@ -17,8 +19,8 @@ export default function Claims() {
         subtitle="Claims Process"
         title="Hassle-Free Claims, Faster Settlements"
         description="Filing a claim shouldn't add to your stress. Our streamlined process ensures quick assessment, transparent communication, and timely settlement of your claims."
-        primaryAction={{ label: 'File a Claim', to: '/contact' }}
-        secondaryAction={{ label: 'Call Us Now', to: '/contact' }}
+        primaryAction={{ label: "File a Claim", to: "/contact" }}
+        secondaryAction={{ label: "Call Us Now", to: "/contact" }}
       />
 
       <section className="py-12 md:py-16 lg:py-20">
@@ -58,49 +60,6 @@ export default function Claims() {
 
       <section className="border-t border-border bg-card py-12 md:py-16 lg:py-20">
         <Container>
-          <SectionTitle
-            subtitle="Documentation"
-            title="Required Documents"
-            description="Keep these documents handy to ensure a smooth and fast claims process."
-          />
-          <div className="mx-auto max-w-2xl">
-            <div className="rounded-2xl border border-border bg-background p-6 shadow-sm sm:p-8">
-              <div className="mb-5 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                  <DocumentTextIcon className="h-5 w-5 text-primary" />
-                </div>
-                <h3 className="font-heading text-lg font-semibold text-heading">
-                  Checklist
-                </h3>
-              </div>
-              <ul className="space-y-3">
-                {requiredDocuments.map((doc, index) => (
-                  <li key={index} className="flex items-start gap-3 text-sm text-paragraph">
-                    <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-success" />
-                    <span>{doc}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-12 md:py-16 lg:py-20">
-        <Container>
-          <SectionTitle
-            subtitle="FAQs"
-            title="Claims FAQs"
-            description="Find answers to the most common questions about our claims process."
-          />
-          <div className="mx-auto max-w-3xl">
-            <Accordion items={claimFaqs} />
-          </div>
-        </Container>
-      </section>
-
-      <section className="border-t border-border bg-card py-12 md:py-16 lg:py-20">
-        <Container>
           <div className="mx-auto max-w-xl">
             <div className="rounded-2xl border-2 border-red-200 bg-red-50 p-6 text-center shadow-sm sm:p-8">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-red-100">
@@ -110,7 +69,8 @@ export default function Claims() {
                 Emergency Assistance
               </h3>
               <p className="mb-4 text-sm text-paragraph">
-                In case of an accident or emergency, call our 24/7 helpline immediately for instant assistance.
+                In case of an accident or emergency, call our 24/7 helpline
+                immediately for instant assistance.
               </p>
               <a
                 href={`tel:${contactInfo.phone}`}
@@ -129,5 +89,5 @@ export default function Claims() {
         description="Our dedicated claims team is available 24/7 to assist you through every step of the process."
       />
     </>
-  )
+  );
 }

@@ -1,20 +1,20 @@
-import HeroBanner from '../components/HeroBanner'
-import Container from '../components/Container'
-import SectionTitle from '../components/SectionTitle'
-import ServiceCard from '../components/ServiceCard'
-import Accordion from '../components/Accordion'
-import CTABanner from '../components/CTABanner'
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
-import { services, serviceFaqs, coveragePlans } from '../data/siteData'
+import HeroBanner from "../components/HeroBanner";
+import Container from "../components/Container";
+import SectionTitle from "../components/SectionTitle";
+import ServiceCard from "../components/ServiceCard";
+import Accordion from "../components/Accordion";
+import CTABanner from "../components/CTABanner";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { services, serviceFaqs, coveragePlans } from "../data/siteData";
 
 const benefits = [
-  'Cashless repair at 5000+ network garages',
-  'Instant policy issuance within minutes',
-  'No-Claim Bonus up to 50% discount',
-  '24/7 roadside assistance across India',
-  'Hassle-free claim settlement process',
-  'Dedicated relationship manager',
-]
+  "Cashless repair at 5000+ network garages",
+  "Instant policy issuance within minutes",
+  "No-Claim Bonus up to 50% discount",
+  "24/7 roadside assistance across India",
+  "Hassle-free claim settlement process",
+  "Dedicated relationship manager",
+];
 
 export default function Services() {
   return (
@@ -23,8 +23,7 @@ export default function Services() {
         subtitle="Insurance Plans"
         title="Comprehensive Coverage for Every Vehicle"
         description="Whether you own a brand new car or a pre-owned vehicle, our insurance plans are designed to give you maximum protection at the most affordable rates."
-        primaryAction={{ label: 'Get Quote', to: '/contact' }}
-        secondaryAction={{ label: 'File a Claim', to: '/claims' }}
+        primaryAction={{ label: "Get Quote", to: "/contact" }}
       />
 
       <section className="py-12 md:py-16 lg:py-20">
@@ -56,7 +55,9 @@ export default function Services() {
                 className="flex items-center gap-3 rounded-xl border border-border bg-background p-4 shadow-sm transition-all duration-300 hover:shadow-md"
               >
                 <CheckCircleIcon className="h-5 w-5 flex-shrink-0 text-success" />
-                <span className="text-sm font-medium text-heading">{benefit}</span>
+                <span className="text-sm font-medium text-heading">
+                  {benefit}
+                </span>
               </div>
             ))}
           </div>
@@ -76,8 +77,8 @@ export default function Services() {
                 key={plan.id}
                 className={`flex flex-col rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8 ${
                   index === 2
-                    ? 'border-primary bg-primary/5 ring-1 ring-primary/20'
-                    : 'border-border bg-card'
+                    ? "border-primary bg-primary/5 ring-1 ring-primary/20"
+                    : "border-border bg-card"
                 }`}
               >
                 {index === 2 && (
@@ -90,7 +91,10 @@ export default function Services() {
                 </h3>
                 <ul className="mb-6 space-y-3">
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm text-paragraph">
+                    <li
+                      key={i}
+                      className="flex items-center gap-3 text-sm text-paragraph"
+                    >
                       <CheckCircleIcon className="h-5 w-5 flex-shrink-0 text-success" />
                       <span>{feature}</span>
                     </li>
@@ -102,24 +106,11 @@ export default function Services() {
         </Container>
       </section>
 
-      <section className="border-t border-border bg-card py-12 md:py-16 lg:py-20">
-        <Container>
-          <SectionTitle
-            subtitle="FAQs"
-            title="Frequently Asked Questions"
-            description="Find answers to common questions about our insurance plans and services."
-          />
-          <div className="mx-auto max-w-3xl">
-            <Accordion items={serviceFaqs} />
-          </div>
-        </Container>
-      </section>
-
       <CTABanner
         title="Ready to Protect Your Vehicle?"
         description="Get a personalized quote in minutes. Our experts are here to help you choose the best plan."
         buttonLabel="Get Your Quote"
       />
     </>
-  )
+  );
 }
