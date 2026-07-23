@@ -4,36 +4,63 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0B3D91',
-          hover: '#2563EB',
+          DEFAULT: "#FF9E20",
+          hover: "#E88D17",
         },
-        accent: '#F59E0B',
-        background: '#F8FAFC',
-        card: '#FFFFFF',
-        heading: '#1E293B',
-        paragraph: '#64748B',
-        border: '#E2E8F0',
-        success: '#16A34A',
+
+        secondary: {
+          DEFAULT: "#215E61",
+          hover: "#18484B",
+        },
+
+        accent: "#FF9E20",
+
+        background: "#F4F2F2",
+
+        card: "#FFFFFF",
+
+        heading: "#1D2128",
+
+        paragraph: "#5B6472",
+
+        border: "#D9D9D9",
+
+        success: "#22C55E",
+
+        danger: "#EF4444",
+
+        warning: "#F59E0B",
       },
+
       fontFamily: {
-        heading: ['Poppins', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ["Poppins", "sans-serif"],
+        body: ["Inter", "sans-serif"],
       },
+
       maxWidth: {
-        container: '1280px',
+        container: "1280px",
       },
+
       height: {
-        navbar: '80px',
+        navbar: "80px",
       },
+
       borderRadius: {
-        '2xl': '1rem',
-        'xl': '0.75rem',
+        xl: "0.75rem",
+        "2xl": "1rem",
+      },
+
+      boxShadow: {
+        card: "0 4px 20px rgba(0,0,0,0.06)",
+        hover: "0 10px 35px rgba(0,0,0,0.12)",
       },
     },
   },
+
   plugins: [],
-}
+};

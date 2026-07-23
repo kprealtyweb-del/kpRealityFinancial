@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 h-20 border-b border-border bg-white shadow-sm">
+    <header className="sticky top-0 z-50 h-20 border-b border-border  shadow-sm bg-[#215E61]">
       <Container className="h-full">
         <nav className="flex h-full items-center justify-between" aria-label="Main navigation">
           {/* Logo Placeholder */}
@@ -16,18 +16,19 @@ export default function Navbar() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-sm">
               <ShieldCheckIcon className="h-6 w-6" />
             </div>
-            <span> KP Realty & Financial Services</span>
+            <span className='text-white'> KP Realty & Financial Services</span>
           </Link>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden items-center gap-8 lg:flex">
+          <div className="hidden items-center gap-8 lg:flex
+          ">
             {navLinks.map((link) => (
               <NavLink
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) =>
                   `font-heading text-sm font-semibold transition-colors duration-300 ${
-                    isActive ? 'text-primary' : 'text-paragraph hover:text-primary'
+                    isActive ? 'text-primary' : 'text-white hover:text-primary'
                   }`
                 }
               >

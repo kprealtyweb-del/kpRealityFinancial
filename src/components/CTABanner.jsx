@@ -3,7 +3,7 @@ import PrimaryButton from '../components/PrimaryButton'
 
 export default function CTABanner({ title, description, buttonLabel = 'Contact Us', buttonTo = '/contact' }) {
   return (
-    <section className="bg-primary py-16 sm:py-20">
+    <section className="bg-[#215E61] py-16 sm:py-20">
       <Container>
         <div className="text-center">
           <h2 className="mb-4 font-heading text-3xl font-bold text-white sm:text-4xl">
