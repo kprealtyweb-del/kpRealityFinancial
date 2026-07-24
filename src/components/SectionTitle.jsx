@@ -1,10 +1,17 @@
-export default function SectionTitle({ subtitle, title, description, align = 'center' }) {
-  const alignClass = align === 'center' ? 'text-center' : 'text-left'
+export default function SectionTitle({
+  subtitle,
+  title,
+  description,
+  align = "center",
+}) {
+  const alignClass = align === "center" ? "text-center" : "text-left";
 
   return (
-    <div className={`mb-10 max-w-2xl ${alignClass} ${align === 'center' ? 'mx-auto' : ''}`}>
+    <div
+      className={`mb-10  ${alignClass} ${align === "center" ? "mx-auto" : ""}`}
+    >
       {subtitle && (
-        <span className="mb-2.5 inline-block font-heading text-xs font-semibold tracking-wider text-primary uppercase">
+        <span className="mb-2.5 inline-block font-heading text-base font-semibold tracking-wider text-primary uppercase">
           {subtitle}
         </span>
       )}
@@ -17,5 +24,5 @@ export default function SectionTitle({ subtitle, title, description, align = 'ce
         </p>
       )}
     </div>
-  )
+  );
 }

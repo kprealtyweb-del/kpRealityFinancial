@@ -49,14 +49,14 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Get Quote CTA */}
+          {/* Chat Now CTA */}
           <div className="hidden lg:block">
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-white px-6 py-2.5 font-heading text-sm font-semibold text-black shadow-sm transition-all duration-300 hover:shadow-md focus:outline-none"
+            <div
+              onClick={() => window.open("https://wa.link/qk571o", "_blank")}
+              className="inline-flex cursor-pointer items-center justify-center rounded-xl bg-white px-6 py-2.5 font-heading text-sm font-semibold text-black shadow-sm transition-all duration-300 hover:shadow-md focus:outline-none"
             >
-              Get Quote
-            </Link>
+              Chat Now
+            </div>
           </div>
 
           {/* Mobile Hamburger Toggle */}
@@ -97,13 +97,14 @@ export default function Navbar() {
               ))}
               <div className="flex gap-x-5">
                 <div className="pt-2">
-                  <Link
-                    to="/contact"
-                    onClick={() => setIsOpen(false)}
-                    className="block w-full rounded-xl bg-primary py-3 text-center font-heading text-sm font-semibold text-white transition-all duration-300 hover:bg-primary-hover"
+                  <div
+                    onClick={() =>
+                      window.open("https://wa.link/qk571o", "_blank")
+                    }
+                    className="block w-full cursor-pointer rounded-xl bg-primary py-3 text-center font-heading text-sm font-semibold text-white transition-all duration-300 hover:bg-primary-hover"
                   >
-                    Get Quote
-                  </Link>
+                    Chat Now
+                  </div>
                 </div>
               </div>
             </div>

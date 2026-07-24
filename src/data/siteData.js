@@ -5,6 +5,10 @@ import {
   ClockIcon,
   DocumentCheckIcon,
   SparklesIcon,
+  HomeModernIcon,
+  BuildingOffice2Icon,
+  ArrowsRightLeftIcon,
+  BanknotesIcon,
 } from "@heroicons/react/24/outline";
 
 export const services = [
@@ -50,6 +54,62 @@ export const services = [
     ],
     icon: DocumentCheckIcon,
   },
+  {
+    id: 4,
+    title: "Residential Properties",
+    description:
+      "Find your ideal home with trusted residential property solutions for buying, selling, renting, and investing across Delhi NCR.",
+    features: [
+      "Property Buying",
+      "Property Selling",
+      "Rental Properties",
+      "Flats & Apartments",
+      "Builder Floors",
+    ],
+    icon: HomeModernIcon,
+  },
+  {
+    id: 5,
+    title: "Commercial Properties",
+    description:
+      "Discover the right commercial property for your business or investment with professional assistance for buying, selling, and renting across Delhi NCR.",
+    features: [
+      "Office Spaces",
+      "Retail Shops",
+      "Showrooms",
+      "Commercial Rentals",
+      "Investment Properties",
+    ],
+    icon: BuildingOffice2Icon,
+  },
+  {
+    id: 6,
+    title: "Buy / Sell / Rent",
+    description:
+      "Complete property solutions for buying, selling, and renting residential and commercial properties with trusted guidance across Delhi NCR.",
+    features: [
+      "Buy Property",
+      "Sell Property",
+      "Rent Property",
+      "Property Consultation",
+      "Residential & Commercial",
+    ],
+    icon: ArrowsRightLeftIcon,
+  },
+  {
+    id: 7,
+    title: "Home & LAP Loan",
+    description:
+      "Get convenient financing solutions for buying your dream home or unlocking the value of your property with Home Loans and Loans Against Property (LAP).",
+    features: [
+      "Home Purchase Loan",
+      "Loan Against Property (LAP)",
+      "Balance Transfer",
+      "Flexible Repayment Options",
+      "Quick Loan Assistance",
+    ],
+    icon: BanknotesIcon,
+  },
 ];
 
 export const whyChooseUs = [
@@ -62,8 +122,8 @@ export const whyChooseUs = [
   },
   {
     id: 2,
-    title: "Fast Claims",
-    description: "Quick and hassle-free claims settlement within 24 hours.",
+    title: "Easy Approval",
+    description: "Quick and hassle-free approval.",
     icon: ClockIcon,
   },
   {
@@ -103,30 +163,58 @@ export const insuranceProcess = [
   {
     id: 1,
     step: "01",
-    title: "Get Quote",
+    title: "Trusted Guidance",
     description:
-      "Share your vehicle details and get an instant, customized insurance quote.",
+      "We provide clear and transparent information to help you make confident decisions about loans, properties, and insurance.",
   },
   {
     id: 2,
     step: "02",
-    title: "Submit Documents",
+    title: "Residential Property Expertise",
     description:
-      "Upload your documents digitally for quick verification and processing.",
+      "Looking for a flat, apartment, builder floor, or independent house? We assist with buying, selling, renting, and investing in residential properties across Delhi NCR.",
   },
   {
     id: 3,
     step: "03",
-    title: "Policy Issued",
+    title: "Commercial Property Solutions",
     description:
-      "Receive your policy document instantly via email after approval.",
+      "From office spaces and retail shops to showrooms and commercial investments, we help businesses and investors find suitable commercial properties based on their requirements.",
   },
   {
     id: 4,
     step: "04",
-    title: "Claim Assistance",
+    title: "Home Loan & LAP Assistance",
     description:
-      "File claims easily with our dedicated support team available 24/7.",
+      "We provide professional assistance for Home Loans and Loans Against Property (LAP) with competitive financing options, flexible repayment plans, documentation support, and a smooth application process.",
+  },
+  {
+    id: 5,
+    step: "05",
+    title: "Quick Assistance",
+    description:
+      "Our team works efficiently to simplify loan processing, property transactions, and insurance-related requirements.",
+  },
+  {
+    id: 6,
+    step: "06",
+    title: "Personalized Solutions",
+    description:
+      "We understand your individual requirements before recommending suitable financial, real estate, or insurance solutions.",
+  },
+  {
+    id: 7,
+    step: "07",
+    title: "Professional Support",
+    description:
+      "From your first enquiry through the completion of the process, our team provides dedicated assistance at every stage.",
+  },
+  {
+    id: 8,
+    step: "08",
+    title: "Customer Satisfaction",
+    description:
+      "We focus on building long-term relationships through quality service, transparent communication, professionalism, and trust.",
   },
 ];
 
@@ -334,7 +422,7 @@ export const coveragePlans = [
 export const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Insurance", path: "/services" },
+  { name: "Services", path: "/services" },
   // { name: 'Claims', path: '/claims' },
   { name: "Contact", path: "/contact" },
 ];
@@ -348,9 +436,8 @@ export const footerLinks = {
   ],
   quickLinks: [
     { name: "Get Quote", path: "/contact" },
-    { name: "File a Claim", path: "/claims" },
+    { name: "Buy POlicy", path: "/services" },
     { name: "Renew Policy", path: "/services" },
-    { name: "FAQs", path: "/services" },
   ],
   insurance: [
     { name: "New Car Insurance", path: "/services" },
@@ -362,7 +449,7 @@ export const footerLinks = {
 
 export const contactInfo = {
   address: "514 Jaina Tower-1, District Centre, Janakpuri, New Delhi – 110058",
-  phone: " +91 98118 86699",
+  phone: "  91 98118 86699",
   email: " k.p.realtyfinancialservices@gmail.com",
   workingHours: "Mon - Sat: 10:00 AM - 7:00 PM",
 };

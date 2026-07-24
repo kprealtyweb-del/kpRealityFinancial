@@ -20,18 +20,19 @@ export default function Services() {
   return (
     <>
       <HeroBanner
-        subtitle="Insurance Plans"
-        title="Comprehensive Coverage for Every Vehicle"
-        description="Whether you own a brand new car or a pre-owned vehicle, our insurance plans are designed to give you maximum protection at the most affordable rates."
+        subtitle="Our Services"
+        title="Complete Solutions for Property, Loans & Insurance"
+        description="Whether you’re looking to buy, sell, or rent a property, secure a Home or Car Loan, or protect your vehicle with Motor Insurance, we provide trusted and convenient solutions tailored to your needs."
         primaryAction={{ label: "Get Quote", to: "/contact" }}
+        imageType="about"
       />
 
       <section className="py-12 md:py-16 lg:py-20">
         <Container>
           <SectionTitle
-            subtitle="Our Plans"
-            title="Choose the Right Plan for Your Vehicle"
-            description="Each plan is designed to offer comprehensive protection while keeping your premium affordable."
+            subtitle="Our Services"
+            title="Choose the Right Solution for Your Needs"
+            description="Explore trusted solutions for property buying, selling & renting, Home & Property Loans, Car Loans, and Motor Insurance, tailored to your needs and budget."
           />
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (

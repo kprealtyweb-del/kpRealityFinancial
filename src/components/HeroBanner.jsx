@@ -2,6 +2,8 @@ import Container from "../components/Container";
 import PrimaryButton from "../components/PrimaryButton";
 import SecondaryButton from "../components/SecondaryButton";
 import car from "../../public/png/car.png";
+import home from "../../public/png/home.png";
+import about from "../../public/png/about.png";
 
 export default function HeroBanner({
   subtitle,
@@ -10,12 +12,13 @@ export default function HeroBanner({
   primaryAction,
   secondaryAction,
   showBannerImage = true,
+  imageType = "car",
 }) {
   return (
     <section
       className="relative flex min-h-[65vh] items-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `${showBannerImage ? `url(${car})` : ""}`,
+        backgroundImage: `${showBannerImage ? `url(${imageType === "car" ? car : imageType === "home" ? home : about})` : ""}`,
       }}
     >
       {/* Overlay */}
@@ -42,7 +45,7 @@ export default function HeroBanner({
 
           <div className="flex flex-wrap gap-4">
             {primaryAction && (
-              <PrimaryButton to={primaryAction.to}>
+              <PrimaryButton onClick={primaryAction.action}>
                 {primaryAction.label}
               </PrimaryButton>
             )}

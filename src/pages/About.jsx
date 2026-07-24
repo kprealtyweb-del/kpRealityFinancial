@@ -4,18 +4,25 @@ import SectionTitle from "../components/SectionTitle";
 import FeatureCard from "../components/FeatureCard";
 import StatCard from "../components/StatCard";
 import CTABanner from "../components/CTABanner";
-import { coreValues, statistics, whyChooseUs } from "../data/siteData";
+import {
+  coreValues,
+  insuranceProcess,
+  statistics,
+  whyChooseUs,
+} from "../data/siteData";
 import officeImg from "../../public/png/office.png";
+import ProcessCard from "../components/ProcessCard";
 
 export default function About() {
   return (
     <>
       <HeroBanner
         subtitle="About  KP Realty & Financial Services"
-        title="Protecting What Drives You Forward"
-        description="Since our inception,  KP Realty & Financial Services has been on a mission to make car insurance accessible, affordable, and hassle-free for every vehicle owner in India."
+        title="Protecting What You Own. Powering What’s Next."
+        description="KP Realty & Financial Services offers trusted solutions for property buying, selling, renting, home & property loans, car loans, and motor insurance, making every property and financial decision simple and hassle-free."
         primaryAction={{ label: "Get Quote", to: "/contact" }}
         secondaryAction={{ label: "Our Services", to: "/services" }}
+        imageType="about"
       />
 
       <section className="py-12 md:py-16 lg:py-20">
@@ -24,28 +31,35 @@ export default function About() {
             <div>
               <SectionTitle
                 subtitle="Our Story"
-                title="Building Trust, One Policy at a Time"
+                title="Building Trust"
                 align="left"
               />
-              <div className="space-y-4 text-sm leading-relaxed text-paragraph sm:text-base">
+              <div className="space-y-4 text-sm leading-relaxed text-paragraph sm:text-base text-justify">
                 <p>
-                  KP Realty & Financial Services was founded with a simple
-                  belief — every vehicle owner deserves reliable, transparent,
-                  and affordable insurance coverage. What started as a small
-                  team of insurance professionals has grown into one of India's
-                  most trusted car insurance providers.
+                  KP Realty & Financial Services is a trusted provider of real
+                  estate, loans, financial, and motor insurance services in New
+                  Delhi. Based in Janakpuri District Centre, we assist
+                  individuals, families, investors, professionals, and
+                  businesses with reliable solutions tailored to their needs.
                 </p>
                 <p>
-                  Over the years, we've served thousands of customers, settled
-                  countless claims, and built a reputation for putting our
-                  customers first. Our digital-first approach makes it easy to
-                  get insured, file claims, and manage your policy from
-                  anywhere.
+                  With extensive industry experience and a customer-first
+                  approach, we offer professional assistance for Residential &
+                  Commercial Properties, Property Buying, Selling & Renting,
+                  Home Loans, Loans Against Property (LAP), New & Used Car
+                  Loans, Real Estate Investments, and Motor Insurance.
                 </p>
                 <p>
-                  We combine deep industry expertise with cutting-edge
-                  technology to deliver an insurance experience that's seamless,
-                  fast, and customer-centric.
+                  Whether you are looking to buy, sell, or rent a property,
+                  invest in real estate, secure financing, or protect your
+                  vehicle, our team provides clear guidance and efficient
+                  support throughout the process.
+                </p>
+                <p>
+                  At KP Realty & Financial Services, we focus on trust,
+                  transparency, and personalized service, helping every customer
+                  make informed decisions aligned with their property and
+                  financial goals.
                 </p>
               </div>
             </div>
@@ -71,10 +85,12 @@ export default function About() {
                 Making Insurance Simple & Accessible
               </h3>
               <p className="text-sm leading-relaxed text-paragraph sm:text-base">
-                To democratize car insurance by providing transparent,
-                affordable, and technology-driven solutions that protect every
-                vehicle owner. We aim to eliminate the complexity of insurance
-                and make the process as simple as a few clicks.
+                Our mission is to become a trusted destination for financial and
+                real estate solutions in Delhi NCR by providing reliable loan
+                assistance, professional residential and commercial property
+                services, and motor insurance solutions through transparent
+                processes, competitive options, personalized guidance, and
+                exceptional customer support.
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-background p-6 shadow-sm sm:p-8">
@@ -82,15 +98,30 @@ export default function About() {
                 Our Vision
               </span>
               <h3 className="mb-4 font-heading text-2xl font-bold text-heading">
-                India's Most Trusted Insurance Partner
+                Your Trusted Partner for Property, Loans & Insurance
               </h3>
               <p className="text-sm leading-relaxed text-paragraph sm:text-base">
-                To become the most customer-centric insurance company in India,
-                where every policyholder feels valued, protected, and confident.
-                We envision a future where insurance is not a burden but a
-                seamless part of vehicle ownership.
+                Our vision is to make property buying, selling, renting, loans,
+                and insurance simple, transparent, and hassle-free. We aim to
+                help every customer make confident decisions with trusted
+                guidance, personalized solutions, and professional support.
               </p>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-12 md:py-16 lg:py-20">
+        <Container>
+          <SectionTitle
+            subtitle="How It Works"
+            title="Simple 4-Step Insurance Process"
+            description="Getting insured has never been easier. Follow our simple process to secure your vehicle in minutes."
+          />
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {insuranceProcess.map((item) => (
+              <ProcessCard key={item.id} {...item} />
+            ))}
           </div>
         </Container>
       </section>

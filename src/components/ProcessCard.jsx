@@ -7,9 +7,9 @@ export default function ProcessCard({ step, title, description }) {
       <h3 className="mb-2 font-heading text-lg font-semibold text-heading">
         {title}
       </h3>
-      <p className="mt-auto text-sm leading-relaxed text-paragraph">
+      <p className="mt-5 text-sm leading-relaxed text-paragraph">
         {description}
       </p>
     </div>
-  )
+  );
 }

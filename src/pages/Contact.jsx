@@ -1,58 +1,58 @@
-import { useState } from 'react'
-import HeroBanner from '../components/HeroBanner'
-import Container from '../components/Container'
-import SectionTitle from '../components/SectionTitle'
-import ContactCard from '../components/ContactCard'
-import PrimaryButton from '../components/PrimaryButton'
+import { useState } from "react";
+import HeroBanner from "../components/HeroBanner";
+import Container from "../components/Container";
+import SectionTitle from "../components/SectionTitle";
+import ContactCard from "../components/ContactCard";
+import PrimaryButton from "../components/PrimaryButton";
 import {
   MapPinIcon,
   PhoneIcon,
   EnvelopeIcon,
   ClockIcon,
-} from '@heroicons/react/24/outline'
-import { contactInfo } from '../data/siteData'
+} from "@heroicons/react/24/outline";
+import { contactInfo } from "../data/siteData";
 
 const contactDetails = [
   {
     icon: MapPinIcon,
-    title: 'Office Address',
+    title: "Office Address",
     content: contactInfo.address,
   },
   {
     icon: PhoneIcon,
-    title: 'Phone Number',
+    title: "Phone Number",
     content: contactInfo.phone,
     href: `tel:${contactInfo.phone}`,
   },
   {
     icon: EnvelopeIcon,
-    title: 'Email Address',
+    title: "Email Address",
     content: contactInfo.email,
     href: `mailto:${contactInfo.email}`,
   },
   {
     icon: ClockIcon,
-    title: 'Working Hours',
+    title: "Working Hours",
     content: contactInfo.workingHours,
   },
-]
+];
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: '',
-  })
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setFormData({ name: '', phone: '', email: '', message: '' })
-  }
+    e.preventDefault();
+    setFormData({ name: "", phone: "", email: "", message: "" });
+  };
 
   return (
     <>
@@ -60,7 +60,6 @@ export default function Contact() {
         subtitle="Get in Touch"
         title="We'd Love to Hear From You"
         description="Have questions about our insurance plans or need assistance with a claim? Our team is here to help you every step of the way."
-        primaryAction={{ label: 'Call Us Now', to: '/contact' }}
       />
 
       <section className="py-12 md:py-16 lg:py-20">
@@ -79,7 +78,7 @@ export default function Contact() {
                 ))}
               </div>
 
-              <div className="mt-8">
+              <div className="mt-8 hidden">
                 <div className="aspect-[16/9] w-full rounded-2xl bg-slate-200 flex items-center justify-center font-heading text-sm font-medium text-slate-500 border border-border shadow-sm">
                   Google Maps Placeholder
                 </div>
@@ -92,11 +91,15 @@ export default function Contact() {
                   Send Us a Message
                 </h3>
                 <p className="mb-6 text-sm text-paragraph">
-                  Fill out the form below and our team will get back to you within 24 hours.
+                  Fill out the form below and our team will get back to you
+                  within 24 hours.
                 </p>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
-                    <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-heading">
+                    <label
+                      htmlFor="name"
+                      className="mb-1.5 block text-sm font-medium text-heading"
+                    >
                       Full Name
                     </label>
                     <input
@@ -111,7 +114,10 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-heading">
+                    <label
+                      htmlFor="phone"
+                      className="mb-1.5 block text-sm font-medium text-heading"
+                    >
                       Phone Number
                     </label>
                     <input
@@ -126,7 +132,10 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="mb-1.5 block text-sm font-medium text-heading">
+                    <label
+                      htmlFor="email"
+                      className="mb-1.5 block text-sm font-medium text-heading"
+                    >
                       Email Address
                     </label>
                     <input
@@ -141,7 +150,10 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-heading">
+                    <label
+                      htmlFor="message"
+                      className="mb-1.5 block text-sm font-medium text-heading"
+                    >
                       Message
                     </label>
                     <textarea
@@ -156,7 +168,13 @@ export default function Contact() {
                     />
                   </div>
                   <PrimaryButton type="submit" className="w-full">
-                    Send Message
+                    <a
+                      href={`mailto:${contactInfo.email}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Send Message
+                    </a>
                   </PrimaryButton>
                 </form>
               </div>
@@ -165,5 +183,5 @@ export default function Contact() {
         </Container>
       </section>
     </>
-  )
+  );
 }
