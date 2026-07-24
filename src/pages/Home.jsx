@@ -4,14 +4,12 @@ import SectionTitle from "../components/SectionTitle";
 import ServiceCard from "../components/ServiceCard";
 import FeatureCard from "../components/FeatureCard";
 import StatCard from "../components/StatCard";
-import ProcessCard from "../components/ProcessCard";
 import TestimonialCard from "../components/TestimonialCard";
 import CTABanner from "../components/CTABanner";
 import {
   services,
   whyChooseUs,
   statistics,
-  insuranceProcess,
   testimonials,
 } from "../data/siteData";
 
@@ -22,8 +20,7 @@ export default function Home() {
         subtitle="Trusted Car Insurance"
         title="Drive with Confidence, Insure with  KP Realty & Financial Services"
         description="Comprehensive car insurance solutions tailored to your needs. Get affordable premiums, fast claims settlement, and 24/7 dedicated support from India's most trusted insurance partner."
-        primaryAction={{ label: "Get Quote", to: "/contact" }}
-        secondaryAction={{ label: "Learn More", to: "/about" }}
+        primaryAction={{ label: "Lets Connect", to: "/contact" }}
         showImage
       />
 
@@ -49,10 +46,9 @@ export default function Home() {
         title="Complete Property & Financing Solutions Under One Roof"
         description="Trusted solutions for buying, selling, renting, investing, and property financing across Delhi NCR"
         primaryAction={{
-          label: "Get Quote",
+          label: "Lets Connect",
           action: () => window.open("https://wa.link/qk571o"),
         }}
-        secondaryAction={{ label: "Learn More", to: "/about" }}
         showImage
       />
 

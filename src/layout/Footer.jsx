@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Container from '../components/Container'
-import { footerLinks, contactInfo } from '../data/siteData'
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Container from "../components/Container";
+import { footerLinks, contactInfo, socialLinks } from "../data/siteData";
 
 export default function Footer() {
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setEmail('')
-  }
+    e.preventDefault();
+    setEmail("");
+  };
 
   return (
     <footer className="border-t border-border bg-heading text-slate-300">
@@ -17,21 +17,28 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           {/* Column 1: Company */}
           <div>
-            <Link to="/" className="font-heading text-xl font-bold text-white sm:text-2xl">
-               KP Realty & Financial Services
+            <Link
+              to="/"
+              className="font-heading text-xl font-bold text-white sm:text-2xl"
+            >
+              KP Realty & Financial Services
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
-              Your trusted partner for comprehensive car insurance solutions. Protecting what matters most to you with fast claims and 24/7 support.
+              Your trusted partner for comprehensive car insurance solutions.
+              Protecting what matters most to you with fast claims and 24/7
+              support.
             </p>
             <div className="mt-6 flex gap-3">
-              {['Facebook', 'Twitter', 'LinkedIn', 'Instagram'].map((social) => (
+              {socialLinks.map((social) => (
                 <a
-                  key={social}
-                  href="#"
-                  aria-label={social}
-                  className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-800 text-xs font-semibold text-slate-400 transition-all duration-300 hover:bg-primary hover:text-white"
+                  key={social.id}
+                  href={social.link}
+                  aria-label={social.id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-800 text-xs font-semibold text-slate-400 transition-all duration-300"
                 >
-                  {social.charAt(0)}
+                  <img src={social.icon} alt={social.id} className="h-6 w-6" />
                 </a>
               ))}
             </div>
@@ -81,21 +88,31 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="space-y-3">
-              <li className="text-sm leading-relaxed text-slate-400">{contactInfo.address}</li>
+              <li className="text-sm leading-relaxed text-slate-400">
+                {contactInfo.address}
+              </li>
               <li>
-                <a href={`tel:${contactInfo.phone}`} className="text-sm text-slate-400 transition-colors duration-300 hover:text-white">
+                <a
+                  href={`tel:${contactInfo.phone}`}
+                  className="text-sm text-slate-400 transition-colors duration-300 hover:text-white"
+                >
                   {contactInfo.phone}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${contactInfo.email}`} className="text-sm text-slate-400 transition-colors duration-300 hover:text-white">
+                <a
+                  href={`mailto:${contactInfo.email}`}
+                  className="text-sm text-slate-400 transition-colors duration-300 hover:text-white"
+                >
                   {contactInfo.email}
                 </a>
               </li>
             </ul>
 
             <div className="mt-6">
-              <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white">Newsletter</p>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white">
+                Newsletter
+              </p>
               <form onSubmit={handleSubmit} className="flex gap-2">
                 <input
                   type="email"
@@ -118,10 +135,11 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-slate-800 pt-8 text-center sm:mt-16">
           <p className="text-sm text-slate-500">
-            &copy; {new Date().getFullYear()}  KP Realty & Financial Services. All rights reserved.
+            &copy; {new Date().getFullYear()} KP Realty & Financial Services.
+            All rights reserved.
           </p>
         </div>
       </Container>
     </footer>
-  )
+  );
 }

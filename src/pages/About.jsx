@@ -20,7 +20,7 @@ export default function About() {
         subtitle="About  KP Realty & Financial Services"
         title="Protecting What You Own. Powering What’s Next."
         description="KP Realty & Financial Services offers trusted solutions for property buying, selling, renting, home & property loans, car loans, and motor insurance, making every property and financial decision simple and hassle-free."
-        primaryAction={{ label: "Get Quote", to: "/contact" }}
+        primaryAction={{ label: "Lets Connect", to: "/contact" }}
         secondaryAction={{ label: "Our Services", to: "/services" }}
         imageType="about"
       />

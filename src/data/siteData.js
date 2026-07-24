@@ -11,6 +11,9 @@ import {
   BanknotesIcon,
 } from "@heroicons/react/24/outline";
 
+import fb from "../../public/png/facebook.png";
+import insta from "../../public/png/instagram.png";
+
 export const services = [
   {
     id: 1,
@@ -435,8 +438,8 @@ export const footerLinks = {
     { name: "Contact", path: "/contact" },
   ],
   quickLinks: [
-    { name: "Get Quote", path: "/contact" },
-    { name: "Buy POlicy", path: "/services" },
+    { name: "Lets Connect", path: "/contact" },
+    { name: "Buy Policy", path: "/services" },
     { name: "Renew Policy", path: "/services" },
   ],
   insurance: [
@@ -453,3 +456,16 @@ export const contactInfo = {
   email: " k.p.realtyfinancialservices@gmail.com",
   workingHours: "Mon - Sat: 10:00 AM - 7:00 PM",
 };
+
+export const socialLinks = [
+  {
+    id: "facebook",
+    link: "https://www.facebook.com/profile.php?id=61592212520874",
+    icon: fb,
+  },
+  {
+    id: "instagram",
+    link: "https://www.instagram.com/kp_realty_financial/",
+    icon: insta,
+  },
+];

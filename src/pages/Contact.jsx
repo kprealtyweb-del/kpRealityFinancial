@@ -37,6 +37,8 @@ const contactDetails = [
   },
 ];
 
+const ACCESSKEY = "66a4d1b0-7d68-4c43-8b92-6c61ebfd3e3d";
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -44,14 +46,65 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
+  const [responseMsg, setResponseMsg] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormData({ name: "", phone: "", email: "", message: "" });
+
+    setLoading(true);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: ACCESSKEY,
+
+          subject: "New Contact Form Submission",
+
+          to: contactInfo.email,
+
+          from_name: formData.name,
+
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setResponseMsg(result.message);
+
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        console.error(result);
+        setResponseMsg("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      setResponseMsg("Something went wrong. Please try again later.");
+    } finally {
+      setTimeout(() => {
+        setLoading(false);
+        setResponseMsg(null);
+      }, 2000);
+    }
   };
 
   return (
@@ -167,14 +220,23 @@ export default function Contact() {
                       className="w-full resize-none rounded-xl border border-border bg-background px-4 py-3 text-sm text-heading outline-none transition-colors duration-300 placeholder:text-slate-400 focus:border-primary focus:ring-2 focus:ring-primary/20"
                     />
                   </div>
-                  <PrimaryButton type="submit" className="w-full">
-                    <a
-                      href={`mailto:${contactInfo.email}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  {responseMsg && (
+                    <p
+                      className={`text-sm ${
+                        responseMsg.includes("Failed")
+                          ? "text-red-500"
+                          : "text-green-600"
+                      }`}
                     >
-                      Send Message
-                    </a>
+                      {responseMsg}
+                    </p>
+                  )}
+                  <PrimaryButton
+                    type="submit"
+                    className="w-full"
+                    disabled={loading}
+                  >
+                    {loading ? "Sending..." : "Send Message"}
                   </PrimaryButton>
                 </form>
               </div>
