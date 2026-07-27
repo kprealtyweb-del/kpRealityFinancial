@@ -29,11 +29,11 @@ export default function Home() {
         <Container>
           <SectionTitle
             subtitle="Our Services"
-            title="Insurance Plans Designed for You"
-            description="Choose from our range of comprehensive insurance plans that offer maximum coverage at the most competitive rates."
+            title=" Loan & Insurance Plans Designed for You"
+            description="Choose from our range of comprehensive insurance & loan plans that offer maximum coverage at the most competitive rates."
           />
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.slice(0, 3).map((service) => (
+            {services.slice(0, 5).map((service) => (
               <ServiceCard key={service.id} {...service} />
             ))}
           </div>
@@ -60,7 +60,7 @@ export default function Home() {
             description="Comprehensive property and financing solutions for buying, selling, renting, investing, and property loans across Delhi NCR"
           />
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.slice(3).map((service) => (
+            {services.slice(5).map((service) => (
               <ServiceCard key={service.id} {...service} />
             ))}
           </div>

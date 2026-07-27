@@ -17,6 +17,34 @@ import insta from "../../public/png/instagram.png";
 export const services = [
   {
     id: 1,
+    title: "Used Car Loan",
+    description:
+      "Flexible financing solutions for your pre-owned vehicle with competitive interest rates, quick processing, minimal documentation, and convenient repayment options.",
+    features: [
+      "Quick Loan Approval",
+      "Competitive Interest Rates",
+      "Flexible Repayment Tenure",
+      "Minimal Documentation",
+      "Hassle-Free Processing",
+    ],
+    icon: SparklesIcon,
+  },
+  {
+    id: 2,
+    title: "New Car Loan",
+    description:
+      "Drive home your dream car with flexible financing solutions, competitive interest rates, quick approvals, and convenient repayment options.",
+    features: [
+      "Quick Loan Approval",
+      "Competitive Interest Rates",
+      "Flexible Repayment Tenure",
+      "Easy Documentation",
+      "Hassle-Free Processing",
+    ],
+    icon: SparklesIcon,
+  },
+  {
+    id: 3,
     title: "New Car Insurance",
     description:
       "Comprehensive coverage for your brand new vehicle with zero depreciation, roadside assistance, and engine protection add-ons.",
@@ -30,7 +58,7 @@ export const services = [
     icon: SparklesIcon,
   },
   {
-    id: 2,
+    id: 4,
     title: "Used Car Insurance",
     description:
       "Reliable protection for pre-owned vehicles with flexible premium options and extensive coverage tailored to your needs.",
@@ -44,7 +72,7 @@ export const services = [
     icon: ShieldCheckIcon,
   },
   {
-    id: 3,
+    id: 5,
     title: "Policy Renewal",
     description:
       "Hassle-free policy renewal with no-claim bonuses, loyalty discounts, and seamless documentation process.",
@@ -58,7 +86,7 @@ export const services = [
     icon: DocumentCheckIcon,
   },
   {
-    id: 4,
+    id: 6,
     title: "Residential Properties",
     description:
       "Find your ideal home with trusted residential property solutions for buying, selling, renting, and investing across Delhi NCR.",
@@ -72,7 +100,7 @@ export const services = [
     icon: HomeModernIcon,
   },
   {
-    id: 5,
+    id: 7,
     title: "Commercial Properties",
     description:
       "Discover the right commercial property for your business or investment with professional assistance for buying, selling, and renting across Delhi NCR.",
@@ -86,7 +114,7 @@ export const services = [
     icon: BuildingOffice2Icon,
   },
   {
-    id: 6,
+    id: 8,
     title: "Buy / Sell / Rent",
     description:
       "Complete property solutions for buying, selling, and renting residential and commercial properties with trusted guidance across Delhi NCR.",
@@ -100,7 +128,7 @@ export const services = [
     icon: ArrowsRightLeftIcon,
   },
   {
-    id: 7,
+    id: 9,
     title: "Home & LAP Loan",
     description:
       "Get convenient financing solutions for buying your dream home or unlocking the value of your property with Home Loans and Loans Against Property (LAP).",
