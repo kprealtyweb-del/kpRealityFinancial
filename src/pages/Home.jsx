@@ -3,15 +3,9 @@ import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import ServiceCard from "../components/ServiceCard";
 import FeatureCard from "../components/FeatureCard";
-import StatCard from "../components/StatCard";
 import TestimonialCard from "../components/TestimonialCard";
 import CTABanner from "../components/CTABanner";
-import {
-  services,
-  whyChooseUs,
-  statistics,
-  testimonials,
-} from "../data/siteData";
+import { services, whyChooseUs, testimonials } from "../data/siteData";
 
 export default function Home() {
   return (
@@ -99,8 +93,8 @@ export default function Home() {
       </section>
 
       <CTABanner
-        title="Need help choosing the right policy?"
-        description="Our expert advisors are ready to help you find the perfect coverage. Get a free consultation today."
+        title="Need Help Choosing the Right Solution?"
+        description="Our experts are ready to assist you with Used Car Loans, Insurance, Real Estate, Home Loans, and LAP. Get professional guidance today."
       />
     </>
   );

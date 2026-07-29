@@ -253,26 +253,26 @@ export const insuranceProcess = [
 export const testimonials = [
   {
     id: 1,
-    name: "Rajesh Kumar",
-    role: "Business Owner",
+    name: "Amit Verma",
+    role: "Used Car Loan Customer",
     content:
-      " KP Realty & Financial Services made getting car insurance so simple. Their team guided me through the entire process, and I got the best rate in the market. Highly recommend!",
+      "I had a great experience with KP Realty & Financial Services while arranging a loan for my used car. The team guided me throughout the process and helped with the documentation and approval. The service was smooth, transparent, and professional.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Priya Sharma",
-    role: "Software Engineer",
+    name: "Rajesh Sharma",
+    role: "Car Insurance Customer",
     content:
-      "I had a minor accident and filed a claim with  KP Realty & Financial Services. The entire process was seamless, and my claim was settled within 48 hours. Outstanding service!",
+      "Excellent service and very professional support. The team helped me choose the right car insurance policy at a competitive premium and explained everything clearly. The entire process was quick and hassle-free. Highly recommended.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Amit Patel",
-    role: "Doctor",
+    name: "Neha Gupta",
+    role: "Real Estate Customer",
     content:
-      "Renewed my policy with  KP Realty & Financial Services and saved 20% compared to my previous insurer. The no-claim bonus benefits are excellent. Truly customer-first approach.",
+      "KP Realty & Financial Services made my property search much easier. Their team understood my requirements and helped me find a suitable property within my budget. I really appreciated their professional approach, transparency, and prompt assistance.",
     rating: 5,
   },
 ];

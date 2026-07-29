@@ -1,15 +1,9 @@
 import HeroBanner from "../components/HeroBanner";
 import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
-import Accordion from "../components/Accordion";
 import CTABanner from "../components/CTABanner";
-import { HiPhone, HiDocumentText, HiCheckCircle } from "react-icons/hi2";
-import {
-  claimProcess,
-  requiredDocuments,
-  claimFaqs,
-  contactInfo,
-} from "../data/siteData";
+import { HiPhone } from "react-icons/hi2";
+import { claimProcess, contactInfo } from "../data/siteData";
 
 export default function Claims() {
   return (
@@ -68,7 +62,7 @@ export default function Claims() {
                 Emergency Assistance
               </h3>
               <p className="mb-4 text-sm text-paragraph">
-                In case of an accident or emergency, call our 24/7 helpline
+                In case of an accident or emergency, call our helpline
                 immediately for instant assistance.
               </p>
               <a
@@ -85,7 +79,7 @@ export default function Claims() {
 
       <CTABanner
         title="Need Help With Your Claim?"
-        description="Our dedicated claims team is available 24/7 to assist you through every step of the process."
+        description="Our dedicated claims team is available to assist you through every step of the process."
       />
     </>
   );

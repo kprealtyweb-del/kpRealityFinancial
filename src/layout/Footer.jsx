@@ -25,8 +25,7 @@ export default function Footer() {
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Your trusted partner for comprehensive car insurance solutions.
-              Protecting what matters most to you with fast claims and 24/7
-              support.
+              Protecting what matters most to you with fast claims. support.
             </p>
             <div className="mt-6 flex gap-3">
               {socialLinks.map((social) => {

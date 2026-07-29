@@ -2,14 +2,8 @@ import HeroBanner from "../components/HeroBanner";
 import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import FeatureCard from "../components/FeatureCard";
-import StatCard from "../components/StatCard";
 import CTABanner from "../components/CTABanner";
-import {
-  coreValues,
-  insuranceProcess,
-  statistics,
-  whyChooseUs,
-} from "../data/siteData";
+import { coreValues, insuranceProcess, whyChooseUs } from "../data/siteData";
 import officeImg from "../assets/png/office.png";
 import ProcessCard from "../components/ProcessCard";
 
@@ -158,8 +152,8 @@ export default function About() {
         <Container>
           <SectionTitle
             subtitle="How It Works"
-            title="Simple 4-Step Insurance Process"
-            description="Getting insured has never been easier. Follow our simple process to secure your vehicle in minutes."
+            title="Simple & Hassle-Free Service Process"
+            description="Get easy solutions for Used Car Loans, Insurance, Real Estate, Home Loans, and LAP with expert guidance, quick support, and a smooth, transparent process."
           />
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {insuranceProcess.map((item) => (
@@ -201,7 +195,7 @@ export default function About() {
 
       <CTABanner
         title="Ready to Experience the  KP Realty & Financial Services Difference?"
-        description="Join thousands of satisfied customers who trust us with their vehicle insurance."
+        description="Join thousands of satisfied customers who trust us."
         buttonLabel="Get Started"
       />
     </>
