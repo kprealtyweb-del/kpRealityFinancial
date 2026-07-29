@@ -1,13 +1,14 @@
 import Container from "../components/Container";
 import PrimaryButton from "../components/PrimaryButton";
 import SecondaryButton from "../components/SecondaryButton";
-import car from "../../public/png/car.png";
-import home from "../../public/png/home.png";
-import about from "../../public/png/about.png";
+import car from "../assets/png/car.png";
+import home from "../assets/png/home.png";
+import about from "../assets/png/about.png";
 
 export default function HeroBanner({
   subtitle,
   title,
+  companyName,
   description,
   primaryAction,
   secondaryAction,
@@ -35,11 +36,14 @@ export default function HeroBanner({
             </span>
           )}
 
-          <h1 className="mb-6 font-heading text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <div className="font-heading text-4xl font-extrabold leading-tight text-white">
             {title}
-          </h1>
+          </div>
+          <div className="mb-6 font-heading text-4xl font-extrabold leading-tight text-white">
+            {companyName}
+          </div>
 
-          <p className="mb-10 max-w-2xl text-lg leading-relaxed text-slate-200 lg:text-xl">
+          <p className="mb-10 max-w-2xl text-lg leading-relaxed text-slate-200 lg:text-xl text-justify">
             {description}
           </p>
 

@@ -5,33 +5,33 @@ import SectionTitle from "../components/SectionTitle";
 import ContactCard from "../components/ContactCard";
 import PrimaryButton from "../components/PrimaryButton";
 import {
-  MapPinIcon,
-  PhoneIcon,
-  EnvelopeIcon,
-  ClockIcon,
-} from "@heroicons/react/24/outline";
+  HiMapPin,
+  HiPhone,
+  HiEnvelope,
+  HiClock,
+} from "react-icons/hi2";
 import { contactInfo } from "../data/siteData";
 
 const contactDetails = [
   {
-    icon: MapPinIcon,
+    icon: HiMapPin,
     title: "Office Address",
     content: contactInfo.address,
   },
   {
-    icon: PhoneIcon,
+    icon: HiPhone,
     title: "Phone Number",
     content: contactInfo.phone,
     href: `tel:${contactInfo.phone}`,
   },
   {
-    icon: EnvelopeIcon,
+    icon: HiEnvelope,
     title: "Email Address",
     content: contactInfo.email,
     href: `mailto:${contactInfo.email}`,
   },
   {
-    icon: ClockIcon,
+    icon: HiClock,
     title: "Working Hours",
     content: contactInfo.workingHours,
   },

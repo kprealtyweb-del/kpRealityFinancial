@@ -1,13 +1,9 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import {
-  Bars3Icon,
-  XMarkIcon,
-  ShieldCheckIcon,
-} from "@heroicons/react/24/outline";
+import { HiBars3, HiXMark } from "react-icons/hi2";
 import Container from "../components/Container";
-import { navLinks } from "../data/siteData";
-import logo from "../../public/png/logo.png";
+import { navLinks, socialLinks } from "../data/siteData";
+import logo from "../assets/png/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,11 +47,30 @@ export default function Navbar() {
 
           {/* Chat Now CTA */}
           <div className="hidden lg:block">
-            <div
-              onClick={() => window.open("https://wa.link/qk571o", "_blank")}
-              className="inline-flex cursor-pointer items-center justify-center rounded-xl bg-white px-6 py-2.5 font-heading text-sm font-semibold text-black shadow-sm transition-all duration-300 hover:shadow-md focus:outline-none"
-            >
-              Chat Now
+            <div className="flex items-center gap-2 ">
+              <div className="flex">
+                {socialLinks.map((social) => {
+                  const Icon = social.icon;
+                  return (
+                    <a
+                      key={social.id}
+                      href={social.link}
+                      aria-label={social.id}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex h-9 w-9 items-center justify-center rounded-xl text-xs font-semibold text-white transition-all duration-300 hover:text-black"
+                    >
+                      <Icon className="h-6 w-6" />
+                    </a>
+                  );
+                })}
+              </div>
+              <div
+                onClick={() => window.open("https://wa.link/qk571o", "_blank")}
+                className="inline-flex cursor-pointer items-center justify-center rounded-xl bg-white px-6 py-2.5 font-heading text-sm font-semibold text-black shadow-sm transition-all duration-300 hover:shadow-md focus:outline-none"
+              >
+                Chat Now
+              </div>
             </div>
           </div>
 
@@ -68,9 +83,9 @@ export default function Navbar() {
             aria-expanded={isOpen}
           >
             {isOpen ? (
-              <XMarkIcon className="h-6 w-6" />
+              <HiXMark className="h-6 w-6" />
             ) : (
-              <Bars3Icon className="h-6 w-6" />
+              <HiBars3 className="h-6 w-6" />
             )}
           </button>
         </nav>
@@ -95,16 +110,33 @@ export default function Navbar() {
                   {link.name}
                 </NavLink>
               ))}
-              <div className="flex gap-x-5">
-                <div className="pt-2">
+              <div className="flex items-center gap-x-5">
+                <div>
                   <div
                     onClick={() =>
                       window.open("https://wa.link/qk571o", "_blank")
                     }
-                    className="block w-full cursor-pointer rounded-xl bg-primary py-3 text-center font-heading text-sm font-semibold text-white transition-all duration-300 hover:bg-primary-hover"
+                    className="block w-full cursor-pointer rounded-xl bg-primary px-4 py-2 text-center font-heading text-sm font-semibold text-white transition-all duration-300 hover:bg-primary-hover"
                   >
                     Chat Now
                   </div>
+                </div>
+                <div className="flex">
+                  {socialLinks.map((social) => {
+                    const Icon = social.icon;
+                    return (
+                      <a
+                        key={social.id}
+                        href={social.link}
+                        aria-label={social.id}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex h-9 w-9 items-center justify-center rounded-xl text-xs font-semibold text-black transition-all duration-300 "
+                      >
+                        <Icon className="h-6 w-6" />
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </div>

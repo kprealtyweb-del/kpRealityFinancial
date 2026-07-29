@@ -3,8 +3,7 @@ import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import Accordion from "../components/Accordion";
 import CTABanner from "../components/CTABanner";
-import { PhoneIcon, DocumentTextIcon } from "@heroicons/react/24/outline";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { HiPhone, HiDocumentText, HiCheckCircle } from "react-icons/hi2";
 import {
   claimProcess,
   requiredDocuments,
@@ -63,7 +62,7 @@ export default function Claims() {
           <div className="mx-auto max-w-xl">
             <div className="rounded-2xl border-2 border-red-200 bg-red-50 p-6 text-center shadow-sm sm:p-8">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-red-100">
-                <PhoneIcon className="h-7 w-7 text-red-600" />
+                <HiPhone className="h-7 w-7 text-red-600" />
               </div>
               <h3 className="mb-2 font-heading text-xl font-bold text-heading">
                 Emergency Assistance
@@ -76,7 +75,7 @@ export default function Claims() {
                 href={`tel:${contactInfo.phone}`}
                 className="inline-flex items-center gap-2 font-heading text-lg font-bold text-primary transition-colors duration-300 hover:text-primary-hover"
               >
-                <PhoneIcon className="h-5 w-5" />
+                <HiPhone className="h-5 w-5" />
                 <span>{contactInfo.phone}</span>
               </a>
             </div>

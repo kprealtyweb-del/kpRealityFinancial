@@ -29,18 +29,21 @@ export default function Footer() {
               support.
             </p>
             <div className="mt-6 flex gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.id}
-                  href={social.link}
-                  aria-label={social.id}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-800 text-xs font-semibold text-slate-400 transition-all duration-300"
-                >
-                  <img src={social.icon} alt={social.id} className="h-6 w-6" />
-                </a>
-              ))}
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.id}
+                    href={social.link}
+                    aria-label={social.id}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-800 text-xs font-semibold text-slate-400 transition-all duration-300 hover:bg-slate-700 hover:text-white"
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 

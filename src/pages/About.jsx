@@ -10,7 +10,7 @@ import {
   statistics,
   whyChooseUs,
 } from "../data/siteData";
-import officeImg from "../../public/png/office.png";
+import officeImg from "../assets/png/office.png";
 import ProcessCard from "../components/ProcessCard";
 
 export default function About() {
@@ -74,7 +74,50 @@ export default function About() {
         </Container>
       </section>
 
+      {/* About the Founder Section */}
       <section className="border-t border-border bg-card py-12 md:py-16 lg:py-20">
+        <Container>
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
+            <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-slate-100 shadow-md">
+                <img
+                  src=""
+                  alt="Mr. Ashwani Mattas - Founder"
+                  className="h-full w-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-border bg-primary p-4 text-white shadow-xl sm:block">
+                <p className="font-heading text-2xl font-bold">20+</p>
+                <p className="text-xs font-medium text-slate-100">
+                  Years of Experience
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <SectionTitle title="About the Founder" align="left" />
+              <h3 className="mb-4 font-heading text-xl font-bold text-primary sm:text-2xl">
+                Mr. Ashwani Mattas
+              </h3>
+              <div className="space-y-4 text-sm leading-relaxed text-paragraph sm:text-base text-justify">
+                <p>
+                  Mr. Ashwani Mattas is the Founder of KP Realty & Financial
+                  Services, with over 20 years of experience in the financial
+                  and real estate industry. He specializes in Used Car Loans,
+                  Real Estate, and financial consultancy, helping individuals
+                  and businesses find the right financial and property
+                  solutions. His commitment to transparency, integrity, and
+                  customer satisfaction has earned the trust of clients, making
+                  KP Realty & Financial Services a reliable name in the
+                  industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-t border-border bg-background py-12 md:py-16 lg:py-20">
         <Container>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
             <div className="rounded-2xl border border-border bg-background p-6 shadow-sm sm:p-8">
@@ -111,7 +154,7 @@ export default function About() {
         </Container>
       </section>
 
-      <section className="py-12 md:py-16 lg:py-20">
+      <section className="py-12 bg-white md:py-16 lg:py-20">
         <Container>
           <SectionTitle
             subtitle="How It Works"
@@ -141,22 +184,7 @@ export default function About() {
         </Container>
       </section>
 
-      <section className="border-y border-border bg-primary/5 py-12 md:py-16 lg:py-20">
-        <Container>
-          <SectionTitle
-            subtitle="Our Impact"
-            title="Numbers That Speak"
-            description="A snapshot of our journey and the trust our customers place in us."
-          />
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-            {statistics.map((stat) => (
-              <StatCard key={stat.id} {...stat} />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-12 md:py-16 lg:py-20">
+      <section className="py-12 bg-white md:py-16 lg:py-20">
         <Container>
           <SectionTitle
             subtitle="Why Choose Us"

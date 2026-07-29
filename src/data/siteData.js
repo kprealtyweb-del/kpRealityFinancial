@@ -1,18 +1,17 @@
 import {
-  ShieldCheckIcon,
-  BoltIcon,
-  UserGroupIcon,
-  ClockIcon,
-  DocumentCheckIcon,
-  SparklesIcon,
-  HomeModernIcon,
-  BuildingOffice2Icon,
-  ArrowsRightLeftIcon,
-  BanknotesIcon,
-} from "@heroicons/react/24/outline";
+  HiShieldCheck,
+  HiBolt,
+  HiUserGroup,
+  HiClock,
+  HiDocumentCheck,
+  HiSparkles,
+  HiHomeModern,
+  HiBuildingOffice2,
+  HiArrowsRightLeft,
+  HiBanknotes,
+} from "react-icons/hi2";
 
-import fb from "../../public/png/facebook.png";
-import insta from "../../public/png/instagram.png";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
 export const services = [
   {
@@ -27,7 +26,7 @@ export const services = [
       "Minimal Documentation",
       "Hassle-Free Processing",
     ],
-    icon: SparklesIcon,
+    icon: HiSparkles,
   },
   {
     id: 2,
@@ -41,24 +40,10 @@ export const services = [
       "Easy Documentation",
       "Hassle-Free Processing",
     ],
-    icon: SparklesIcon,
+    icon: HiSparkles,
   },
   {
     id: 3,
-    title: "New Car Insurance",
-    description:
-      "Comprehensive coverage for your brand new vehicle with zero depreciation, roadside assistance, and engine protection add-ons.",
-    features: [
-      "Zero Depreciation Cover",
-      "Engine Protection",
-      "Roadside Assistance",
-      "Return to Invoice",
-      "Key Replacement",
-    ],
-    icon: SparklesIcon,
-  },
-  {
-    id: 4,
     title: "Used Car Insurance",
     description:
       "Reliable protection for pre-owned vehicles with flexible premium options and extensive coverage tailored to your needs.",
@@ -69,8 +54,23 @@ export const services = [
       "Theft Protection",
       "Natural Disaster Cover",
     ],
-    icon: ShieldCheckIcon,
+    icon: HiShieldCheck,
   },
+  {
+    id: 4,
+    title: "New Car Insurance",
+    description:
+      "Comprehensive coverage for your brand new vehicle with zero depreciation, roadside assistance, and engine protection add-ons.",
+    features: [
+      "Zero Depreciation Cover",
+      "Engine Protection",
+      "Roadside Assistance",
+      "Return to Invoice",
+      "Key Replacement",
+    ],
+    icon: HiSparkles,
+  },
+
   {
     id: 5,
     title: "Policy Renewal",
@@ -83,7 +83,7 @@ export const services = [
       "Gap-Free Coverage",
       "Enhanced Benefits",
     ],
-    icon: DocumentCheckIcon,
+    icon: HiDocumentCheck,
   },
   {
     id: 6,
@@ -93,11 +93,11 @@ export const services = [
     features: [
       "Property Buying",
       "Property Selling",
-      "Rental Properties",
+      "Highrise Building",
       "Flats & Apartments",
       "Builder Floors",
     ],
-    icon: HomeModernIcon,
+    icon: HiHomeModern,
   },
   {
     id: 7,
@@ -111,7 +111,7 @@ export const services = [
       "Commercial Rentals",
       "Investment Properties",
     ],
-    icon: BuildingOffice2Icon,
+    icon: HiBuildingOffice2,
   },
   {
     id: 8,
@@ -125,7 +125,7 @@ export const services = [
       "Property Consultation",
       "Residential & Commercial",
     ],
-    icon: ArrowsRightLeftIcon,
+    icon: HiArrowsRightLeft,
   },
   {
     id: 9,
@@ -139,7 +139,7 @@ export const services = [
       "Flexible Repayment Options",
       "Quick Loan Assistance",
     ],
-    icon: BanknotesIcon,
+    icon: HiBanknotes,
   },
 ];
 
@@ -149,37 +149,38 @@ export const whyChooseUs = [
     title: "Affordable Premium",
     description:
       "Get the best coverage at competitive rates that fit your budget.",
-    icon: BoltIcon,
+    icon: HiBolt,
   },
   {
     id: 2,
     title: "Easy Approval",
     description: "Quick and hassle-free approval.",
-    icon: ClockIcon,
+    icon: HiClock,
   },
   {
     id: 3,
     title: "Trusted Advisors",
     description: "Expert guidance from certified insurance professionals.",
-    icon: UserGroupIcon,
+    icon: HiUserGroup,
   },
   {
     id: 4,
-    title: "24/7 Support",
-    description: "Round-the-clock assistance whenever you need us.",
-    icon: ClockIcon,
+    title: "Dedicated Support",
+    description:
+      "Get reliable assistance during business hours for your used car loan and real estate requirements.",
+    icon: HiClock,
   },
   {
     id: 5,
     title: "Easy Documentation",
     description: "Minimal paperwork with digital-first processes.",
-    icon: DocumentCheckIcon,
+    icon: HiDocumentCheck,
   },
   {
     id: 6,
     title: "Instant Policy",
     description: "Get your policy issued within minutes, not days.",
-    icon: SparklesIcon,
+    icon: HiSparkles,
   },
 ];
 
@@ -194,23 +195,23 @@ export const insuranceProcess = [
   {
     id: 1,
     step: "01",
-    title: "Trusted Guidance",
+    title: "Used Car Loan Expert",
     description:
-      "We provide clear and transparent information to help you make confident decisions about loans, properties, and insurance.",
+      "With over 20 years of experience in used car financing, we provide trusted guidance, transparent loan options, and professional assistance to make your used car loan process simple and hassle-free.",
   },
   {
     id: 2,
     step: "02",
-    title: "Residential Property Expertise",
+    title: "Real Estate Expertise & Consulting",
     description:
-      "Looking for a flat, apartment, builder floor, or independent house? We assist with buying, selling, renting, and investing in residential properties across Delhi NCR.",
+      "Get professional real estate consulting for buying, selling, renting, and investing in properties across Delhi NCR. We provide expert guidance to help you find the right property and make confident, informed real estate decisions.",
   },
   {
     id: 3,
     step: "03",
-    title: "Commercial Property Solutions",
+    title: "Used Car Insurance & Renewal Solutions",
     description:
-      "From office spaces and retail shops to showrooms and commercial investments, we help businesses and investors find suitable commercial properties based on their requirements.",
+      "Get reliable assistance with used car insurance, policy renewals, and competitive premium options. We help you choose suitable coverage with a simple, transparent, and hassle-free process.",
   },
   {
     id: 4,
@@ -224,28 +225,28 @@ export const insuranceProcess = [
     step: "05",
     title: "Quick Assistance",
     description:
-      "Our team works efficiently to simplify loan processing, property transactions, and insurance-related requirements.",
+      "Our team ensures fast and hassle-free support for used car loan processing and real estate deals, from documentation and financing to property buying, selling, and renting.",
   },
   {
     id: 6,
     step: "06",
     title: "Personalized Solutions",
     description:
-      "We understand your individual requirements before recommending suitable financial, real estate, or insurance solutions.",
+      "We understand your specific needs and provide tailored solutions for used car loans and real estate deals, helping you choose the right financing options and property opportunities.",
   },
   {
     id: 7,
     step: "07",
     title: "Professional Support",
     description:
-      "From your first enquiry through the completion of the process, our team provides dedicated assistance at every stage.",
+      "From your first enquiry to final approval or deal completion, our team provides dedicated support for used car loans and real estate transactions at every stage.",
   },
   {
     id: 8,
     step: "08",
     title: "Customer Satisfaction",
     description:
-      "We focus on building long-term relationships through quality service, transparent communication, professionalism, and trust.",
+      "We build lasting relationships by providing reliable used car loan assistance and trusted real estate deals with transparent communication, professional service, and complete customer support.",
   },
 ];
 
@@ -391,28 +392,28 @@ export const coreValues = [
     title: "Integrity",
     description:
       "We operate with complete transparency and honesty in every interaction.",
-    icon: ShieldCheckIcon,
+    icon: HiShieldCheck,
   },
   {
     id: 2,
     title: "Customer First",
     description:
       "Every decision we make puts our customers' needs at the center.",
-    icon: UserGroupIcon,
+    icon: HiUserGroup,
   },
   {
     id: 3,
     title: "Innovation",
     description:
       "We leverage technology to make insurance simpler and more accessible.",
-    icon: SparklesIcon,
+    icon: HiSparkles,
   },
   {
     id: 4,
     title: "Excellence",
     description:
       "We strive for the highest standards in service delivery and claims processing.",
-    icon: BoltIcon,
+    icon: HiBolt,
   },
 ];
 
@@ -480,8 +481,8 @@ export const footerLinks = {
 
 export const contactInfo = {
   address: "514 Jaina Tower-1, District Centre, Janakpuri, New Delhi – 110058",
-  phone: "  91 98118 86699",
-  email: " k.p.realtyfinancialservices@gmail.com",
+  phone: "+91 98118 86699",
+  email: "k.p.realtyfinancialservices@gmail.com",
   workingHours: "Mon - Sat: 10:00 AM - 7:00 PM",
 };
 
@@ -489,11 +490,11 @@ export const socialLinks = [
   {
     id: "facebook",
     link: "https://www.facebook.com/profile.php?id=61592212520874",
-    icon: fb,
+    icon: FaFacebook,
   },
   {
     id: "instagram",
     link: "https://www.instagram.com/kp_realty_financial/",
-    icon: insta,
+    icon: FaInstagram,
   },
 ];

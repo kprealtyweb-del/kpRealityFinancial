@@ -1,11 +1,11 @@
-import { StarIcon } from '@heroicons/react/24/solid'
+import { HiStar } from 'react-icons/hi2'
 
 export default function TestimonialCard({ name, role, content, rating }) {
   return (
     <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8">
       <div className="mb-4 flex gap-1">
         {Array.from({ length: rating }).map((_, i) => (
-          <StarIcon key={i} className="h-5 w-5 text-accent" />
+          <HiStar key={i} className="h-5 w-5 text-accent" />
         ))}
       </div>
       <p className="mb-6 flex-1 text-sm leading-relaxed text-paragraph italic">

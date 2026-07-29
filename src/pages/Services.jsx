@@ -4,7 +4,7 @@ import SectionTitle from "../components/SectionTitle";
 import ServiceCard from "../components/ServiceCard";
 import Accordion from "../components/Accordion";
 import CTABanner from "../components/CTABanner";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { HiCheckCircle } from "react-icons/hi2";
 import { services, serviceFaqs, coveragePlans } from "../data/siteData";
 
 const benefits = [
@@ -55,7 +55,7 @@ export default function Services() {
                 key={index}
                 className="flex items-center gap-3 rounded-xl border border-border bg-background p-4 shadow-sm transition-all duration-300 hover:shadow-md"
               >
-                <CheckCircleIcon className="h-5 w-5 flex-shrink-0 text-success" />
+                <HiCheckCircle className="h-5 w-5 flex-shrink-0 text-success" />
                 <span className="text-sm font-medium text-heading">
                   {benefit}
                 </span>
@@ -96,7 +96,7 @@ export default function Services() {
                       key={i}
                       className="flex items-center gap-3 text-sm text-paragraph"
                     >
-                      <CheckCircleIcon className="h-5 w-5 flex-shrink-0 text-success" />
+                      <HiCheckCircle className="h-5 w-5 flex-shrink-0 text-success" />
                       <span>{feature}</span>
                     </li>
                   ))}

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { HiArrowRight } from "react-icons/hi2";
 
 export default function ServiceCard({
   icon: Icon,
@@ -36,7 +36,7 @@ export default function ServiceCard({
         className="mt-auto inline-flex cursor-pointer items-center gap-2 font-heading text-sm font-semibold text-primary transition-colors duration-300 hover:text-primary-hover"
       >
         Get Quote{" "}
-        <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        <HiArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
       </div>
     </div>
   );

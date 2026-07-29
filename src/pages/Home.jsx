@@ -18,8 +18,9 @@ export default function Home() {
     <>
       <HeroBanner
         subtitle="Trusted Car Insurance"
-        title="Drive with Confidence, Insure with  KP Realty & Financial Services"
-        description="Comprehensive car insurance solutions tailored to your needs. Get affordable premiums, fast claims settlement, and 24/7 dedicated support from India's most trusted insurance partner."
+        title="Drive Home Your Dream Car with Confidence Used Car Loans by"
+        companyName="KP Realty & Financial Services"
+        description="Get the best financing solutions for your pre-owned car with quick approvals, competitive interest rates, and a hassle-free loan process. Whether you're buying your first used car or upgrading to a better vehicle, we're here to make ownership simple and affordable."
         primaryAction={{ label: "Lets Connect", to: "/contact" }}
         showImage
       />
@@ -29,7 +30,7 @@ export default function Home() {
         <Container>
           <SectionTitle
             subtitle="Our Services"
-            title=" Loan & Insurance Plans Designed for You"
+            title=" Loans & Insurance Plans Designed for You"
             description="Choose from our range of comprehensive insurance & loan plans that offer maximum coverage at the most competitive rates."
           />
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -41,10 +42,10 @@ export default function Home() {
       </section>
 
       <HeroBanner
-        subtitle="Trusted Property Insurance"
+        subtitle="Turning Property Dreams into Reality"
         imageType="home"
-        title="Complete Property & Financing Solutions Under One Roof"
-        description="Trusted solutions for buying, selling, renting, investing, and property financing across Delhi NCR"
+        title="Complete Real Estate & Property Financing Under One Roof"
+        description="Whether you're buying, selling, renting, investing, or financing a property, our experts ensure a smooth and reliable experience across Delhi NCR."
         primaryAction={{
           label: "Lets Connect",
           action: () => window.open("https://wa.link/qk571o"),
@@ -56,7 +57,7 @@ export default function Home() {
         <Container>
           <SectionTitle
             subtitle="Our Services"
-            title="Your One-Stop Solution for Property & Finance Needs"
+            title="Trusted Property Consultants for Every Step of Your Journey"
             description="Comprehensive property and financing solutions for buying, selling, renting, investing, and property loans across Delhi NCR"
           />
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -82,17 +83,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="border-y border-border bg-primary/5 py-12 md:py-16 lg:py-20">
-        <Container>
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-            {statistics.map((stat) => (
-              <StatCard key={stat.id} {...stat} />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="border-t border-border bg-card py-12 md:py-16 lg:py-20">
+      <section className="border-t border-border py-12  bg-background md:py-16 lg:py-20">
         <Container>
           <SectionTitle
             subtitle="Testimonials"

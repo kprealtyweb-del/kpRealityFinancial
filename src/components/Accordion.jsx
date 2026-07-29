@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/24/outline'
+import { HiChevronDown } from 'react-icons/hi2'
 
 export default function Accordion({ items }) {
   const [openId, setOpenId] = useState(null)
@@ -25,7 +25,7 @@ export default function Accordion({ items }) {
               aria-expanded={isOpen}
             >
               <span>{item.question}</span>
-              <ChevronDownIcon
+              <HiChevronDown
                 className={`h-5 w-5 flex-shrink-0 text-paragraph transition-transform duration-300 ${
                   isOpen ? 'rotate-180 text-primary' : ''
                 }`}
