@@ -13,7 +13,7 @@ export default function Services() {
         title="Complete Solutions for Property, Loans & Insurance"
         description="Whether you’re looking to buy, sell, or rent a property, secure a Home or Car Loan, or protect your vehicle with Motor Insurance, we provide trusted and convenient solutions tailored to your needs."
         primaryAction={{ label: "Lets Connect", to: "/contact" }}
-        imageType="about"
+        imageType="service"
       />
 
       <section className="py-12 md:py-16 lg:py-20">

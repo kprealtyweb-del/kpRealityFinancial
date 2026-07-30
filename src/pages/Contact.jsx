@@ -4,12 +4,7 @@ import Container from "../components/Container";
 import SectionTitle from "../components/SectionTitle";
 import ContactCard from "../components/ContactCard";
 import PrimaryButton from "../components/PrimaryButton";
-import {
-  HiMapPin,
-  HiPhone,
-  HiEnvelope,
-  HiClock,
-} from "react-icons/hi2";
+import { HiMapPin, HiPhone, HiEnvelope, HiClock } from "react-icons/hi2";
 import { contactInfo } from "../data/siteData";
 
 const contactDetails = [
@@ -112,6 +107,7 @@ export default function Contact() {
       <HeroBanner
         subtitle="Get in Touch"
         title="We'd Love to Hear From You"
+        imageType="contact"
         description="Have questions about our insurance plans or need assistance with a claim? Our team is here to help you every step of the way."
       />
 

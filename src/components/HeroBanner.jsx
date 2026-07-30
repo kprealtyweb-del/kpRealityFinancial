@@ -4,6 +4,8 @@ import SecondaryButton from "../components/SecondaryButton";
 import car from "../assets/png/car.png";
 import home from "../assets/png/home.png";
 import about from "../assets/png/about.png";
+import contact from "../assets/png/contact.png";
+import service from "../assets/png/service.png";
 
 export default function HeroBanner({
   subtitle,
@@ -19,7 +21,7 @@ export default function HeroBanner({
     <section
       className="relative flex min-h-[65vh] items-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `${showBannerImage ? `url(${imageType === "car" ? car : imageType === "home" ? home : about})` : ""}`,
+        backgroundImage: `${showBannerImage ? `url(${imageType === "car" ? car : imageType === "home" ? home : imageType === "about" ? about : imageType === "service" ? service : contact})` : ""}`,
       }}
     >
       {/* Overlay */}

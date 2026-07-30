@@ -6,6 +6,7 @@ import CTABanner from "../components/CTABanner";
 import { coreValues, insuranceProcess, whyChooseUs } from "../data/siteData";
 import officeImg from "../assets/png/office.png";
 import ProcessCard from "../components/ProcessCard";
+import ashwaniMattas from "../assets/png/owner.png";
 
 export default function About() {
   return (
@@ -75,7 +76,7 @@ export default function About() {
             <div className="relative mx-auto w-full max-w-md lg:max-w-none">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-slate-100 shadow-md">
                 <img
-                  src=""
+                  src={ashwaniMattas}
                   alt="Mr. Ashwani Mattas - Founder"
                   className="h-full w-full object-cover object-top transition-transform duration-500 hover:scale-105"
                 />
@@ -119,15 +120,14 @@ export default function About() {
                 Our Mission
               </span>
               <h3 className="mb-4 font-heading text-2xl font-bold text-heading">
-                Making Insurance Simple & Accessible
+                Making Loans, Insurance & Real Estate Simple
               </h3>
               <p className="text-sm leading-relaxed text-paragraph sm:text-base">
-                Our mission is to become a trusted destination for financial and
-                real estate solutions in Delhi NCR by providing reliable loan
-                assistance, professional residential and commercial property
-                services, and motor insurance solutions through transparent
-                processes, competitive options, personalized guidance, and
-                exceptional customer support.
+                At KP Realty & Financial Services, our mission is to provide
+                trusted and transparent solutions for loans, motor insurance,
+                and real estate across Delhi NCR. We help customers make
+                confident decisions through expert guidance, competitive
+                options, and personalized support.
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-background p-6 shadow-sm sm:p-8">
